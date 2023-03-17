@@ -12,38 +12,50 @@ public class determinaHoraDoDia {
         }else if(min<0 || min>59){
             System.out.println("Os minutos devem estar entre 0-60!!!");
         }
+        System.out.println(getTimeName(hora, min));
     }
-   /* public static String getTimeName(int h, int m){
-        StringBuilder sb = new StringBuilder();
-        if(h != 0 && m==0) {
-            switch (h) {
-                case 1:
-                    sb.append("Uma hora");
-                case 2:
-                    sb.append("Duas horas");
-                case 3:
-                    sb.append("Tres horas");
-                case 4:
-                    sb.append("Quatro horas");
-                case 5:
-                    sb.append("Cinco horas");
-                case 6:
-                    sb.append("Seis horas");
-                case 7:
-                    sb.append("Sete horas");
-                case 8:
-                    sb.append("oito horas");
-                case 9:
-                    sb.append("nove horas");
-                case 10:
-                    sb.append("Dez horas");
-                case 11:
-                    sb.append("onze hora");
-                case 12:
-                    sb.append("doze Horas");
 
-            }
+       private static final String[] hoursWords = { "", "uma", "duas", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez", "onze", "doze" };
+       private static final String[] minutesWords = { "", "um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez", "onze", "doze", "treze", "catorze", "quinze", "dezesseis", "dezessete", "dezoito", "dezenove", "vinte", "vinte e um", "vinte e dois", "vinte e três", "vinte e quatro", "vinte e cinco", "vinte e seis", "vinte e sete", "vinte e oito", "vinte e nove" };
 
-        }
-    }*/
-}
+       public static String getTimeName(int hours, int minutes) {
+           String timeName = "";
+
+           // Tratamento das horas
+           if (hours == 12) {
+               hours = 0; // Para cálculos de módulo e indexação do array
+           }
+           if (minutes == 0) {
+               timeName += hoursWords[hours] + " hora";
+               if (hours == 1) {
+                   timeName += " exata";
+               } else {
+                   timeName += "s";
+               }
+           } else if (minutes == 15) {
+               timeName += "um quarto para as " + hoursWords[(hours % 12) + 1];
+           } else if (minutes == 30) {
+               timeName += hoursWords[hours] + " e meia";
+           } else if (minutes == 45) {
+               timeName += "um quarto para as " + hoursWords[(hours % 12) + 1];
+           } else {
+               if (minutes < 30) {
+                   timeName += minutesWords[minutes] + " minutos";
+               } else {
+                   timeName += minutesWords[60 - minutes] + " minutos";
+                   hours = (hours % 12) + 1;
+               }
+               if (minutes % 10 == 1 && minutes != 11) {
+                   timeName += " para as " + hoursWords[hours];
+               } else if (minutes % 10 == 2 && minutes != 12) {
+                   timeName += " para as " + hoursWords[hours];
+               } else {
+                   timeName += " para as " + hoursWords[hours];
+               }
+           }
+
+           return timeName;
+       }
+   }
+
+
