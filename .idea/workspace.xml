@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce5a800d-39be-4703-8aa8-5b18cb572ff7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NumeroDeArmstrong.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/apresntarPromptLerValores.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/calculoVolumeArea.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/converterFahrenheit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/determinaHoraDoDia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/escolinhaFutebol.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/maiorDeTresNumeros.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/raioDeUmCirculo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tpc1.iml" afterDir="false" />
-    </list>
+    <list default="true" id="ce5a800d-39be-4703-8aa8-5b18cb572ff7" name="Changes" comment="tpc1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,6 +46,29 @@
       <option name="presentableId" value="Default" />
       <updated>1678928025474</updated>
     </task>
+    <task id="LOCAL-00001" summary="tpc1">
+      <created>1679058703533</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679058703533</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="tpc1" />
+    <option name="LAST_COMMIT_MESSAGE" value="tpc1" />
   </component>
 </project>
